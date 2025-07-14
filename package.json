@@ -5,6 +5,7 @@
     "start": "serve -s"
   },
   "dependencies": {
+    "gatsby-plugin-sass": "^4.15.0",
     "serve": "^14.2.0"
   }
 }
