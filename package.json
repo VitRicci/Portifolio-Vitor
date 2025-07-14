@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "gatsby-plugin-sass": "^4.15.0",
+    "sass": "^1.89.2",
     "serve": "^14.2.0"
   }
 }
