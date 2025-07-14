@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -30,6 +31,13 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin-left: 1rem;
+    &:hover {
+        color: blue;
+    }
+    click{
+        cursor: pointer;
+        scroll-behavior: smooth;
+    }
 }
 
 /* Seções */
@@ -38,6 +46,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 
 /* Hero Section */
 #hero {
@@ -58,6 +67,7 @@ section {
     margin-top: 1rem;
     transition: background 0.3s;
 }
+
 
 .btn:hover {
     background: #1a252f;
@@ -171,4 +181,18 @@ footer {
     font-size: 2rem;
     display: inline-block;
     vertical-align: middle;
+}
+
+.hero-img {
+    background-image: url("https://yata-apix-a4ab5fab-85d5-409b-a7af-06e70507b85b.s3-object.locaweb.com.br/8c6b63b245724b41b36982193f7bb69f.png");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.hover-link:hover {
+  color: red;
+  text-decoration: underline;
 }
