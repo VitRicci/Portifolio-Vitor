@@ -1,0 +1,174 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+/* Seções */
+section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+#hero {
+    background: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    background: #2c3e50;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #1a252f;
+}
+
+/* Cards de Projetos */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.project-card h3 {
+    margin: 1rem 1rem 0.5rem;
+    font-size: 1.25rem;
+}
+
+.project-card p {
+    margin: 0 1rem 1rem;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem;
+    flex-wrap: wrap;
+}
+
+/* Estilos específicos para projetos locais */
+.project-local {
+    opacity: 0.95;
+}
+
+.project-local-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.project-warning {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #e74c3c;
+    background: #fdecea;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+
+/* Botão do GitHub */
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #24292e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.github-button:hover {
+    background: #2c3e50;
+}
+
+.github-button img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #2c3e50;
+    color: #fff;
+}
+
+.tech-icon{
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
