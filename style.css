@@ -76,9 +76,10 @@ section {
 /* Cards de Projetos */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Largura mínima maior para uniformidade */
     gap: 2rem;
     margin-top: 1.5rem;
+    align-items: stretch; /* Garante altura igual */
 }
 
 .project-card {
@@ -88,9 +89,12 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     position: relative;
-    display: flex;              /* Adicionado */
-    flex-direction: column;     /* Adicionado */
-    height: 100%;               /* Adicionado */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 420px; /* Altura mínima para todos ficarem iguais */
+    max-width: 100%;
+    justify-content: flex-start;
 }
 
 .project-card:hover {
@@ -107,12 +111,14 @@ section {
 .project-card h3 {
     margin: 1rem 1rem 0.5rem;
     font-size: 1.25rem;
+    flex-shrink: 0;
 }
 
 .project-card p {
     margin: 0 1rem 1rem;
     color: #555;
     font-size: 0.9rem;
+    flex-shrink: 0;
 }
 
 .project-links {
@@ -120,7 +126,7 @@ section {
     gap: 0.5rem;
     padding: 0 1rem 1rem;
     flex-wrap: wrap;
-    margin-top: auto;           /* Adicionado para empurrar para o final */
+    margin-top: auto;
 }
 
 /* Estilos específicos para projetos locais */
