@@ -123,9 +123,9 @@ section {
 .project-links {
     display: block;
     gap: 0.5rem;
+    margin-top: auto; /* Garante que os botões fiquem na base do card */
     padding: 0 1rem 1rem;
     flex-wrap: wrap;
-    margin-top: auto;
 }
 
 /* Estilos específicos para projetos locais */
@@ -147,7 +147,7 @@ section {
 
 .project-warning {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 0.8rem;
     color: #e74c3c;
     background: #fdecea;
@@ -156,26 +156,46 @@ section {
 }
 
 /* Botão do GitHub */
-.github-button {
+.github-button,
+.netlify-button {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #24292e;
-    color: white;
     padding: 8px 16px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 500;
+    font-size: 1rem;
     transition: background 0.3s;
+}
+
+.github-button {
+    background: #24292e;
+    color: white;
+    margin-top: 200px; /* Adiciona espaçamento para baixo */
 }
 
 .github-button:hover {
     background: #2c3e50;
 }
 
-.github-button img {
-    width: 20px;
-    height: 20px;
+.netlify-button {
+    background: #00ad9f;
+    color: white;
+    margin-left: 2rem; /* Espaço horizontal entre os botões */
+    margin-right:auto;
+    
+}
+
+.netlify-button:hover {
+    background: #00897b;
+}
+
+.netlify-button img, .netlify-icon {
+    width: 20px;      /* Reduzido de 20px para 16px */
+    height: 20px;     /* Reduzido de 20px para 16px */
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 /* Footer */
@@ -205,3 +225,4 @@ footer {
   color: red;
   text-decoration: underline;
 }
+
