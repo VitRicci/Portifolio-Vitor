@@ -157,7 +157,8 @@ section {
 
 /* Botão do GitHub */
 .github-button,
-.netlify-button {
+.netlify-button,
+.vercel-button {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -197,6 +198,27 @@ section {
     margin-right: 8px;
     vertical-align: middle;
 }
+
+/* Botão do Vercel */
+.vercel-button {
+    background: #00ad9f;
+    color: white;
+    margin-left: 2rem; /* Espaço horizontal entre os botões */
+    margin-right:auto;
+    
+}
+
+.vercel-button:hover {
+    background: #00897b;
+}
+
+.vercel-button img, .vercel-icon {
+    width: 20px;      /* Reduzido de 20px para 16px */
+    height: 20px;     /* Reduzido de 20px para 16px */
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 
 /* Footer */
 footer {
